@@ -35,11 +35,11 @@ const config = {
     position: [0, 1, 0],   // 光源位置（太阳）
   },
   pointLight: "#ffffff",  // 点光源（如城市灯光）
-  shadowEnabled: false,    // 启用阴影
+  shadowEnabled: true,    // 启用阴影
   globeColor: "#000000",  // 深蓝色
   showAtmosphere: true,   // 显示大气层
   atmosphereColor: "#ffffff",  // 大气层颜色
-  atmosphereAltitude: 0.1,     // 大气层高度
+  atmosphereAltitude: 0.3,     // 大气层高度
   atmosphereScattering: true,  // 开启散射效果
   arcTime: 4000,        // 飞行轨迹的时间
   arcLength: 0.8,       // 弧线的长度
