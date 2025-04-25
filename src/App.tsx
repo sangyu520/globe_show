@@ -27,31 +27,31 @@ const generateData = (count: number) => {  // 为 count 参数指定类型 numbe
 const data = generateData(20);
 
 const config = {
-  globeTexture: '/textures/earth_texture.jpg',  // 高清地球纹理（确保路径正确）
+  //globeTexture: '/textures/earth_texture.jpg',  // 高清地球纹理（确保路径正确）
   ambientLight: "#ffffff", // 环境光
   directionalLight: {
     color: "#ffffff",      // 日光色
-    intensity: 1.0,        // 强度
+    intensity: 1,        // 强度
     position: [0, 1, 0],   // 光源位置（太阳）
   },
   pointLight: "#ffffff",  // 点光源（如城市灯光）
-  shadowEnabled: true,    // 启用阴影
-  globeColor: "#0e0e3d",  // 深蓝色
+  shadowEnabled: false,    // 启用阴影
+  globeColor: "#000000",  // 深蓝色
   showAtmosphere: true,   // 显示大气层
-  atmosphereColor: "#00aaff",  // 大气层颜色
-  atmosphereAltitude: 0.2,     // 大气层高度
+  atmosphereColor: "#ffffff",  // 大气层颜色
+  atmosphereAltitude: 0.1,     // 大气层高度
   atmosphereScattering: true,  // 开启散射效果
   arcTime: 4000,        // 飞行轨迹的时间
   arcLength: 0.8,       // 弧线的长度
   arcHeight: 0.5,       // 弧线的高度
   rings: 2,             // 环的数量
   maxRings: 3,          // 最大环数
-  rotationSpeed: 0.01,   // 地球自转速度
-  dayNightCycle: true,   // 启用昼夜交替效果
-  skyboxTexture: '/textures/sky_texture.jpg',  // 星空背景
-  starsEnabled: true,    // 启用星空效果
-  cloudTexture: '/textures/cloud_texture.jpg', // 云层贴图
-  weatherEffects: 'dynamic',  // 动态天气
+  rotationSpeed: 0.02,   // 地球自转速度
+  //dayNightCycle: true,   // 启用昼夜交替效果
+  //skyboxTexture: '/textures/sky_texture.jpg',  // 星空背景
+  //starsEnabled: true,    // 启用星空效果
+  //cloudTexture: '/textures/cloud_texture.jpg', // 云层贴图
+  //weatherEffects: 'dynamic',  // 动态天气
 };
 
 function App() {
